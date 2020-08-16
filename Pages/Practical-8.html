@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a web-page layout using div tags</title>
+    <style>
+        #container {
+            border: 8px solid lavender;
+            width: 900px;
+            height: 1605px;
+            margin: 0px auto;
+            padding: 15px;
+        }
+        #Header {
+            background-color: grey;
+            height: 35px;
+            margin-bottom: 15px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            font-size: 23px;
+            align-items: center;
+        }
+
+        #Section-1 {
+            background-color: lightskyblue;
+            height: 500px;
+            margin-bottom: 15px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            font-size: 23px;
+            align-items: center;
+        }
+
+        #Section-2 {
+            border: 0px solid white;
+            height: 200px;
+            margin-bottom: 15px;
+
+        }
+
+        #i {
+            background-color:rgb(241, 173, 47);
+            border-radius: 50%;
+            float: left;
+            width:205px;
+            height: 200px;
+            margin: 10px;
+            
+        }
+        #Section-3 {
+            border: 0px solid white;
+            margin-bottom: 15px;
+        }
+
+        #Section-3:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        #left-sidebar {
+            background-color: grey;
+            width: 48%;
+            height: 350px;
+            font-size: 23px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            float: left;
+        }
+        
+        #right-sidebar {
+
+            width: 48%;
+            height: 350px;
+            float: right;
+        }
+
+        #Article-1 {
+            width: 100%;
+            height: 110px;
+            background-color: lightsalmon;
+            font-size: 23px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+            
+        }
+
+        #Article-2 {
+            width: 100%;
+            height: 110px;
+            background-color:lightsalmon;
+            font-size: 23px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        #Article-3 {
+            width: 100%;
+            height: 110px;
+            background-color: lightsalmon;
+            font-size: 23px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #Section-4 {
+            border: 0px solid white;
+            height: 200px;
+            margin-bottom: 15px ;
+        }
+
+        #s {
+            background-color:orangered;
+            width: 205px;
+            margin: 10px;
+            height: 170px;
+            float: left;
+        }
+
+        #Footer {
+            background-color: rgb(217, 157, 245);
+            height: 35px;
+            margin-bottom: 15px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            font-size: 23px;
+            align-items: center;
+        }
+
+           </style>
+</head>
+<body>
+    <div id="container">
+        <div id="Header">Header</div>
+        <div id="Section-1"><img src="" alt=""></div>
+        <h3 style="text-align: center;">Section-1</h3>
+        <div id="Section-2">
+            <div id="i"></div>
+            <div id="i"></div>
+            <div id="i"></div>
+            <div id="i"></div>
+        </div>
+        <h3 style="text-align: center;">Section-2</h3>
+
+        <div id="Section-3">
+            <div id="left-sidebar">Main content</div>
+            <div id="right-sidebar">
+                <div id="Article-1">Article-1</div>
+                <div id="Article-2">Article-2</div>
+                <div id="Article-3">Article-3</div>
+            </div>
+        </div>
+        <h3 style="text-align: center;">Section-3</h3>
+
+        <div id="Section-4">
+            <div id="s"></div>
+            <div id="s"></div>
+            <div id="s"></div>
+            <div id="s"></div>
+        </div>
+        <h3 style="text-align: center;">Section-4</h3>
+
+        
+        <div id="Footer">Footer</div>
+    </div>
+    
+</body>
+</html>

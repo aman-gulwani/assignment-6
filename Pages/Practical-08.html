@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fixed Navigation bar</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        ul {
+            position: fixed;
+            width: 1330px;
+            margin: 0px 10px;
+            background-color: grey;
+            display: flex;
+            justify-content: space-evenly;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        
+
+        ul li {
+            display: inline-block;
+            
+            
+        }
+
+        ul li a {
+            width: 160px;
+            text-align: center;
+            display: block;
+            text-decoration: none;
+            padding: 10px 0px;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: whitesmoke;
+            font-weight: bold;
+        }
+
+        ul li a:hover {
+            color: black;
+            background-color: white;
+        }
+
+        img {
+            
+            width: 1330px;
+            margin-top: 55px;
+
+        }
+
+        #container {
+            content: Practical-8;
+            margin: 0px 10px;
+            width: 1330px;
+            content: 'Practical-8';
+            display: block;
+            position: relative;
+            text-align: center;
+            color: white;
+
+        }
+
+        .top-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="">HOME</a></li>
+        <li><a href="">ABOUT US</a></li>
+        <li><a href="">TEAM</a></li>
+        <li><a href="">TECHNOLOGIES</a></li>
+        <li><a href="">CONTACTS</a></li>
+    </ul>
+    <div id="container">
+        <img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/Banner_1.jpg" alt="Banner">
+        <div id="top-left">Practical-8</div>
+
+
+    </div>
+    
+    
+</body>
+</html>

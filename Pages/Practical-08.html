@@ -5,44 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fixed Navigation bar</title>
     <style>
-        * {
-            padding: 0px;
-            margin: 0px;
-        }
-        ul {
-            position: fixed;
-            width: 1330px;
-            margin: 0px 10px;
-            background-color: grey;
-            display: flex;
-            justify-content: space-evenly;
-            overflow: hidden;
-            margin-bottom: 20px;
-        }
         
-
-        ul li {
-            display: inline-block;
-            
-            
-        }
-
-        ul li a {
-            width: 160px;
-            text-align: center;
-            display: block;
-            text-decoration: none;
-            padding: 10px 0px;
-            font-size: 20px;
-            font-family: Arial, Helvetica, sans-serif;
-            color: whitesmoke;
-            font-weight: bold;
-        }
-
-        ul li a:hover {
-            color: black;
-            background-color: white;
-        }
 
         img {
             
@@ -52,21 +15,28 @@
         }
 
         #container {
-            content: Practical-8;
+
             margin: 0px 10px;
             width: 1330px;
-            content: 'Practical-8';
-            display: block;
-            position: relative;
-            text-align: center;
-            color: white;
-
+            height: 1500px;
         }
 
-        .top-left {
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
+        .main {
+            width: 1330px;
+            height: 1000px;
+        }
+
+        .main img {
+            width: 1330px;
+            height: 700px;
+            
+        }
+
+        .main h1 {
+            position:relative;
+            color:red;
+            top: 200px;
+        }
     </style>
 </head>
 <body>
@@ -78,8 +48,12 @@
         <li><a href="">CONTACTS</a></li>
     </ul>
     <div id="container">
-        <img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/Banner_1.jpg" alt="Banner">
-        <div id="top-left">Practical-8</div>
+        
+        <div id="main">
+            <h1>Practical-8</h1>
+            <img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/Banner_1.jpg" alt="Banner">
+        </div>
+        
 
 
     </div>

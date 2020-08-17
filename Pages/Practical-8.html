@@ -5,129 +5,257 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create a web-page layout using div tags</title>
     <style>
-        #container {
-            border: 8px solid lavender;
-            width: 900px;
-            height: 1605px;
-            margin: 0px auto;
-            padding: 15px;
+        * {
+            padding: 0px;
+            margin: 0px;
         }
-        #Header {
-            background-color: grey;
-            height: 35px;
-            margin-bottom: 15px;
-            color: white;
+
+        #container {
+            border: 0px solid white;
+            width: 1350px;
+            height: 2500px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        ul {
+            overflow: hidden;
+            position: fixed;
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
             font-size: 23px;
-            align-items: center;
+            text-align: center;
+            width: 1330px;
+            height: 40px;
+            background-color: grey;
+            margin-bottom: 20px;
+            margin: 0px 10px;
+
+
+        }
+        
+
+        ul li {
+            display: inline-block;
+            
+            
+        }
+
+        ul li a {
+            width: 160px;
+            height: 15px;
+            text-align: center;
+            display: block;
+            text-decoration: none;
+            padding: 10px 0px;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: whitesmoke;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        ul li a:hover {
+            color: black;
+            background-color: white;
         }
 
         #Section-1 {
-            background-color: lightskyblue;
-            height: 500px;
-            margin-bottom: 15px;
+            width: 1350px;
+            height:850px;
+            
+        }
+
+        #Section-1 img {
+            width: 1330px;
+            margin: 0px 10px;
+            margin-top: 20px;
+        }
+
+        #Section-1 h1 {
+            position: relative;
             color: white;
-            display: flex;
-            justify-content: center;
-            font-size: 23px;
-            align-items: center;
+            font-size: 50px;
+            top: 250px;
+            left: 70px;
+        }
+        #a1 h1 {
+            text-align: center;
+            padding: 40px 0px 20px 0px;
         }
 
         #Section-2 {
             border: 0px solid white;
-            height: 200px;
+            height: 300px;
             margin-bottom: 15px;
-
         }
 
-        #i {
-            background-color:rgb(241, 173, 47);
-            border-radius: 50%;
+        #Section-2 img {
             float: left;
-            width:205px;
-            height: 200px;
+            border-radius: 50%;
             margin: 10px;
-            
-        }
-        #Section-3 {
-            border: 0px solid white;
-            margin-bottom: 15px;
+            width:277px;
+            height: 277px;
+            padding: 20px;
+
         }
 
-        #Section-3:after {
-            content: '';
-            display: block;
-            clear: both;
+        #a2 h1 {
+            text-align: center;
+            padding: 40px 0px 20px 0px;
+        }
+        
+        #Section-3 {
+            margin: 20px 10px;
+            height: 625px;
+            width: 1330px;
+        }
+        #Section3 h1 {
+            text-align: center;
+        }
+
+        #left-sidebar h1 {
+            position: relative;
+            color: white;
+            top: 0px;
+            left: 15px;
         }
 
         #left-sidebar {
             background-color: grey;
             width: 48%;
-            height: 350px;
+            height: 500px;
             font-size: 23px;
             color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             float: left;
+            margin-top: 20px;
         }
         
+        #left-sidebar p {
+            position: relative;
+            color: white;
+            top: 35px;
+            padding: 15px;
+            font-size: 22px;
+            text-align: justify;
+        }
         #right-sidebar {
 
             width: 48%;
-            height: 350px;
+            height: 500px;
             float: right;
         }
 
         #Article-1 {
+
+
             width: 100%;
-            height: 110px;
-            background-color: lightsalmon;
-            font-size: 23px;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 10px;
+            height: 173px;
+            overflow: hidden;
             
+        }
+        #Article-1 img {
+            position: static;
+            width: 100%;
+            height: 300px;
         }
 
         #Article-2 {
             width: 100%;
-            height: 110px;
-            background-color:lightsalmon;
-            font-size: 23px;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 10px;
+            height: 173px;
+            overflow: hidden;
+
+        }
+
+        #Article-2 img {
+            width: 100%;
+            height: 300px;
         }
 
         #Article-3 {
             width: 100%;
-            height: 110px;
-            background-color: lightsalmon;
-            font-size: 23px;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            height: 173px;
+            overflow: hidden;
+
+        }
+
+        #Article-3 img {
+            width: 100%;
+            height: 300px;
+        }
+
+        #Article-1 h3 {
+            position: relative;
+            color: black;
+            text-align: center;
+            top: 35px;
+            font-size: 24px;
+        }
+
+        #Article-2 h3 {
+            position: relative;
+            color: black;
+            text-align: center;
+            top: 35px;
+            font-size: 24px;
+
+        }
+
+        #Article-3 h3 {
+            position: relative;
+            color: black;
+            text-align: center;
+            top: 35px;
+            font-size: 24px;
+
+        }
+
+        #a3 h1 {
+            text-align: center;
+            padding: 40px 0px 20px 0px;
+
         }
 
         #Section-4 {
-            border: 0px solid white;
-            height: 200px;
+            
+            height: 550px;
+            width: 1330px;
             margin-bottom: 15px ;
         }
 
-        #s {
-            background-color:orangered;
-            width: 205px;
-            margin: 10px;
-            height: 170px;
+        #Section-4 a {
+            margin: 10px 20px;
+            display: block;
+            width: 215px;
+            height: 22px;
+            text-decoration: none;
+            text-align: center;
+            color: whitesmoke;
+            background-color: red;
+            border-radius: 5px;
+        }
+        #Section-4 a:hover {
+            background-color: blue;
+        }
+
+        #box {
+            border: 0px lavender;
+            width: 255px;
+            height: 500px;
+            background-color: white;
+            margin: 30px 38px;
+            border-radius: 10px;
             float: left;
+        }
+        #box p {
+            border: 0px white;
+            margin: 5px 15px 20px;
+            text-align: justify;
+        }
+        #box img {
+            border: 0px white;
+            margin: 10px 20px;
+            border-radius: 6px;
         }
 
         #Footer {
@@ -145,37 +273,79 @@
 </head>
 <body>
     <div id="container">
-        <div id="Header">Header</div>
-        <div id="Section-1"><img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/Banner_1.jpg" alt=""></div>
-        <h3 style="text-align: center;">Section-1</h3>
-        <div id="Section-2">
-            <div id="i"></div>
-            <div id="i"></div>
-            <div id="i"></div>
-            <div id="i"></div>
+        <div id="Header">
+            <ul>
+                <li><a href="#Header">HOME</a></li>
+                <li><a href="#a2">About us</a></li>
+                <li><a href="#a1">TEAM</a></li>
+                <li><a href="#a3">TECHNOLOGIES</a></li>
+                <li><a href="#Footer">CONTACTS</a></li>
+            </ul>
         </div>
-        <h3 style="text-align: center;">Section-2</h3>
+        <div id="Section-1">
+            <h1>Practical-8</h1><img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/Banner_1.jpg" alt=""></div>
+        <div id="a1"><h1>Team Members</h1></div>
+        <div id="Section-2">
+            <img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/avtar_1.png" alt="">
+            <img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/Avtar_2.png" alt="">
+            <img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/Avtar_3.png" alt="">
+            <img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/Avtar_4.png" alt="">
+        </div>
+        
 
         <div id="Section-3">
-            <div id="left-sidebar">Main content</div>
+            <div id="a2"><h1>About us</h1></div>
+
+            <div id="left-sidebar">
+                <h1>About Projects</h1>
+                <p>This project is all about Fullstack web development using scripting technologies. It consists of the web development techniques like HTML(HyperText Markup Language), CSS(Cascading Style Sheets), JS(Javascript), BS(Bootstrap).
+                   This projrct is completed associated by the students and teachers of the GLA University,Mathura. During the session of 2020-2021 this project was build while learning the skills of the HTML, CSS, javascript, Bootstrap. Throughout the session we all the students are working hard for it and applying our skills day by day as we are learning them.
+                   This is my first ever projrct in the Fullstack web development using scripting technologies and it is very interesting I am enjoying this project so much as it needs enough logic and skills of the HTML, CSS, Javascript, Bootstrap and lot of efforts.
+
+                </p>
+            </div>
             <div id="right-sidebar">
-                <div id="Article-1">Article-1</div>
-                <div id="Article-2">Article-2</div>
-                <div id="Article-3">Article-3</div>
+                <div id="Article-1"><h3>Project-1</h3><img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/side_1.jpg" alt=""></div>
+
+                <div id="Article-2"><h3>Project-2</h3><img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/side_2.jpeg" alt=""></div>
+
+                <div id="Article-3"><h3>Project-3</h3><img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/side_3.jpg" alt=""></div>
             </div>
         </div>
-        <h3 style="text-align: center;">Section-3</h3>
+        <div id="a3"><h1 style="text-align: center;">Technologies used</h1></div>
+        
 
         <div id="Section-4">
-            <div id="s"></div>
-            <div id="s"></div>
-            <div id="s"></div>
-            <div id="s"></div>
+            <div id="box"><img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/html-intro.png" alt="Introduction to HTML" width="215px" height="120px">
+                <p style="text-align: center;"><b>Introduction to HTML</b></p>
+                <p>Hypertext refers to the way in which Web pages (HTML documents) are linked together. Thus, the link available on a webpage is called Hypertext.
+                    As its name suggests, HTML is a Markup Language which means you use HTML to simply "mark-up" a text document with tags that tell a Web browser how to structure it to display.Originally, HTML was developed with the intent of defining the structure of documents.</p>
+                    <a href="https://aman-gulwani.github.io/assignment-6/Pages/html_.html">Read more</a>
+            </div>
+            <div id="box"><img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/css-intro.jpg" alt="Introduction to CSS" width="215px" height="120px">
+                <p style="text-align: center;"><b>Introduction to CSS</b></p>
+                <p> CSS refers to the Cascading style sheets. This style sheet language also allows you to add effects or animations to your website. You can use it to display some CSS animations like click button effects, spinners or loaders, and animated backgrounds. Without CSS, your website will appear as a plain HTML page. 
+                    The cascading means that a style applied to a parent element will also apply to all children elements within the parent.</p>
+                    <a href="https://aman-gulwani.github.io/assignment-6/Pages/css_.html">Read more</a>
+            </div>
+            <div id="box"><img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/js-intro.jpg" alt="Introduction to Javascript" width="215px" height="120px">
+                <p style="text-align: center;"><b>Introduction to Javascript</b></p>
+                <p>JavaScript often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
+                    Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web. JavaScript enables interactive web pages.</p>
+                    <a href="https://aman-gulwani.github.io/assignment-6/Pages/js_.html">Read more</a>
+            </div>
+            <div id="box"><img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/bs-intro.jpg" alt="Introduction to Bootstrap" width="215px" height="120px">
+                <p style="text-align: center;"><b>Introduction to Bootstrap</b></p>
+                <p>Bootstrap, originally named Twitter Blueprint, was developed by Mark Otto and Jacob Thornton at Twitter as a framework to encourage consistency across internal tools. Before Bootstrap, various libraries were used for interface development, which led to inconsistencies and a high maintenance burden. According to Twitter developer Mark Otto:
+                    A super small group of developers and I got together to design and build a new internal tool.</p>
+                    <a href="https://aman-gulwani.github.io/assignment-6/Pages/bs_.html">Read more</a>
+            </div>
+                   
         </div>
-        <h3 style="text-align: center;">Section-4</h3>
+        <h1 style="text-align: center;">Contacts</h1>
 
         
-        <div id="Footer">Footer</div>
+        <div id="Footer">Website template for Practical-8 :<a href="https://github.com/aman-gulwani">© Aman-Gulwani</a></div>
     </div>
     
 </body>

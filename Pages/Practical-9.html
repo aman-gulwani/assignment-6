@@ -34,6 +34,15 @@
       top: 0;
     }
 
+    #scr {
+      background-color: white;
+      width: 100%;
+      height: 20px;
+      max-width: 1200px;
+      position: fixed;
+      top: 55px;
+    }
+
     .menu {
       list-style: none;
       float: right;
@@ -73,7 +82,7 @@
 
     #banner {
       width: 100%;
-      margin-top: 90px;
+      margin-top: 75px;
       height: 680px;
       margin-bottom: 15px;
       display: flex;
@@ -214,6 +223,7 @@
       text-align: justify;
       line-height: 25px;
       color: white;
+      overflow: hidden;
     }
 
     .grid>a {
@@ -238,10 +248,10 @@
       background-color: blue;
     }
 
-    /* -------Footer Section ------- */
+    
     #footer {
       background-color: plum;
-      height: 100px;
+      height: 90px;
     }
 
     #footer>p {
@@ -251,8 +261,7 @@
       padding: 20px;
     }
 
-    /* 1. First Break-point */
-    /* 801px - 1199px */
+    /* 1. First Break-point --> 801px - 1199px */
 
     @media (min-width: 801px) and (max-width: 1199px) {
       .menu {
@@ -261,7 +270,7 @@
       }
 
       .menu li {
-        line-height: 70px;
+        line-height: 55px;
         display: inline-block;
       }
 
@@ -280,7 +289,7 @@
       }
 
       html {
-        scroll-padding-top: 70px;
+        scroll-padding-top: 55px;
         scroll-behavior: smooth;
       }
 
@@ -292,24 +301,29 @@
       .hide-btn,
       #chk {
         font-size: 30px;
-        line-height: 70px;
+        line-height: 55px;
         color: white;
         display: none;
         float: right;
         padding-right: 20px;
       }
 
-      /* ------Header Container-------- */
-
       #header {
         width: 100%;
         background-color: grey;
         position: fixed;
         top: 0;
-        height: 70px;
+        height: 55px;
       }
 
-      /* ------------------Banner ------------- */
+      #scr {
+      background-color: white;
+      width: 100%;
+      height: 20px;
+      max-width: 1200px;
+      position: fixed;
+      top: 55px;
+      }
 
       #banner {
         width: 100%;
@@ -322,7 +336,7 @@
       }
 
       #banner {
-        background-image: url(https://imgur.com/qIxEnMl.jpg);
+        background-image: url(https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/Banner_1.jpg);
         background-size: cover;
         background-position: center;
       }
@@ -351,8 +365,6 @@
         margin-left: 15%;
         margin-bottom: 20px;
       }
-
-      /* -------------About Us-------------- */
 
       #sec2-container::after {
         content: '';
@@ -399,24 +411,23 @@
       }
 
       #p1 {
-        background-image: url(https://imgur.com/JyMz0CR.jpg);
+        background-image: url(https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/side_1.jpg);
         background-size: cover;
         background-repeat: no-repeat;
       }
 
       #p2 {
-        background-image: url(https://imgur.com/GFLWoXM.jpeg);
+        background-image: url(https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/side_2.jpg);
         background-size: cover;
         background-repeat: no-repeat;
       }
 
       #p3 {
-        background-image: url(https://imgur.com/uzmZqZA.jpg);
+        background-image: url(https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/side_3.jpg);
         background-size: cover;
         background-repeat: no-repeat;
       }
 
-      /* --------- Technologies Used------------ */
       #grid-container {
         width: 100%;
         margin: 15px auto;
@@ -482,7 +493,7 @@
       /* -------Footer Section ------- */
       #footer {
         background-color: plum;
-        height: 100px;
+        height: 80px;
       }
 
       #footer>p {
@@ -493,7 +504,7 @@
       }
     }
 
-    /* 2. Second Break-point */
+    /* 2. Second Break-point --> maximum-width : 800px*/
 
     @media (max-width: 800px) {
       #header {
@@ -501,7 +512,7 @@
         background-color: grey;
         position: fixed;
         top: 0;
-        height: 70px;
+        height: 55px;
       }
 
       .show-btn {
@@ -539,6 +550,15 @@
         top: 10px;
       }
 
+      #scr {
+      background-color: white;
+      width: 100%;
+      height: 20px;
+      max-width: 1200px;
+      position: fixed;
+      top: 55px;
+    }
+
       #banner {
         width: 100%;
         height: 350px;
@@ -553,6 +573,8 @@
         margin: 10px 20px;
         color: #fff;
       }
+
+
 
       #circle-container {
         width: 100%;
@@ -685,7 +707,7 @@
         padding: 25px 0px;
       }
 
-      /* 3. Third Break-point */
+      /* 3. Third Break-point maximum-width: 625px*/
 
       @media (max-width: 625px) {
         /* Set container to min-width of 320px */
@@ -714,7 +736,7 @@
           display: block;
         }
 
-        .manu li a {
+        .menu li a {
           display: block;
         }
 
@@ -794,19 +816,19 @@
         }
 
         #p1 {
-          background-image: url(https://imgur.com/JyMz0CR.jpg);
+          background-image: url(https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/side_1.jpg);
           background-size: cover;
           background-repeat: no-repeat;
         }
 
         #p2 {
-          background-image: url(https://imgur.com/GFLWoXM.jpeg);
+          background-image: url(https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/side_2.jpg);
           background-size: cover;
           background-repeat: no-repeat;
         }
 
         #p3 {
-          background-image: url(https://imgur.com/uzmZqZA.jpg);
+          background-image: url(https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/side_3.jpg);
           background-size: cover;
           background-repeat: no-repeat;
         }
@@ -823,7 +845,7 @@
           border-radius: 8px;
           margin-bottom: 20px;
           box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
-          max-height: 500px;
+          max-height: 700px;
         }
 
         .grid>img {
@@ -889,6 +911,8 @@
     </div>
     <a name="top"></a>
 
+    <div id="scr"></div>
+
     <div id="banner">
       <h2>PRACTICAL - 9</h2>
     </div>
@@ -941,45 +965,41 @@
         <img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/html-intro.png" alt="" />
         <h4>Introduction to HTML</h4>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit,
-          illum odio! Aperiam esse quia blanditiis quasi? Cum itaque
-          recusandae consequuntur!
+            Hypertext refers to the way in which Web pages (HTML documents) are linked together. Thus, the link available on a webpage is called Hypertext.
+            As its name suggests, HTML is a Markup Language which means you use HTML to simply "mark-up" a text document with tags that tell a Web browser how to structure it to display.Originally, HTML was developed with the intent of defining the structure of documents.
         </p>
 
-        <a href="practical-5-html.html">Read More</a>
+        <a href="https://aman-gulwani.github.io/assignment-6/Pages/html_.html">Read More</a>
       </div>
       <div class="grid">
         <img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/css-intro.jpg" alt="" />
         <h4>Introduction to CSS</h4>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit,
-          illum odio! Aperiam esse quia blanditiis quasi? Cum itaque
-          recusandae consequuntur!
+            CSS refers to the Cascading style sheets. This style sheet language also allows you to add effects or animations to your website. You can use it to display some CSS animations like click button effects, spinners or loaders, and animated backgrounds. Without CSS, your website will appear as a plain HTML page. 
+            The cascading means that a style applied to a parent element will also apply to all children elements.
         </p>
 
-        <a href="practical-5-css.html">Read More</a>
+        <a href="https://aman-gulwani.github.io/assignment-6/Pages/css_.html">Read More</a>
       </div>
       <div class="grid">
         <img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/js-intro.jpg" alt="" />
         <h4>Introduction to JavaScript</h4>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit,
-          illum odio! Aperiam esse quia blanditiis quasi? Cum itaque
-          recusandae consequuntur!
+            JavaScript often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
+            Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web. JavaScript enables interactive web pages.
         </p>
 
-        <a href="practical-5-jq.html">Read More</a>
+        <a href="https://aman-gulwani.github.io/assignment-6/Pages/js_.html">Read More</a>
       </div>
       <div class="grid">
         <img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/bs-intro.jpg" alt="" />
         <h4>Introduction to Bootstrap</h4>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit,
-          illum odio! Aperiam esse quia blanditiis quasi? Cum itaque
-          recusandae consequuntur!
+            Bootstrap, originally named Twitter Blueprint, was developed by Mark Otto and Jacob Thornton at Twitter as a framework to encourage consistency across internal tools. Before Bootstrap, various libraries were used for interface development, which led to inconsistencies and a high maintenance burden. According to Twitter developer Mark Otto:
+            A super small group of developers and I got together to design.
         </p>
 
-        <a href="practical-5-boot.html">Read More</a>
+        <a href="https://aman-gulwani.github.io/assignment-6/Pages/bs_.html">Read More</a>
       </div>
     </div>
     <a name="contact"></a>
@@ -987,7 +1007,7 @@
     <div id="footer">
       <p>
         Website Template for Practical-9 &copy;
-        <a href="https://beta-labs.in">Beta-labs</a><br /><br />
+        <a href="https://github.com/aman-gulwani">Aman-Gulwani</a><br /><br />
         <a href="#top">Back to top</a>
       </p>
     </div>

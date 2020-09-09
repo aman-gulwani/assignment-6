@@ -5,11 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>Custom price table template</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            min-width: 100%;
+            background-color: lightgrey;
+        }
+
+        #wrapper {
+            width: 600px;
+            background-color: #fff;
+            padding: 10px;
+            margin: 20px auto;
+        }
+
+        .custom-table {
+            width: 100%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        .basic {
+            background-color: #c1dcb7;
+        }
+
+        .plus {
+            background-color: #bad6c8;
+        }
+
+        .deluxe {
+            background-color: #bbd3dc;
+        }
+
+        .pro {
+            background-color: #d5e4bc;
+        }
+
+        .custom-table td, .custom-table th {
+            width: 150px;
+            padding: 8px 5px;
+            text-align: center;
+            border-right: 2px solid white;
+            border-left: 2px solid white;
+        }
+
+        .custom-table th {
+            height: 70px;
+            color: #64548f;
+            font-size: 20px;
+        }
+
+        i {
+            font-size: 20px;
+            color: #64548f;
+            margin-right: 10px;
+        }
+
+    </style>
 </head>
 <body>
     <div id="wrapper">
+    <h2>Select your Plan</h2>
         <div id="custom-table">
-            <table>
+            <table class="custom-table">
+                <colgroup class="basic"></colgroup>
+                <colgroup class="plus"></colgroup>  
+                <colgroup class="deluxe"></colgroup>  
+                <colgroup class="pro"></colgroup>  
                 <thead>
                     <tr>
                         <th><i class="fa fa-building"></i>Basic</th>
@@ -56,10 +123,34 @@
                         <td>included</td>
                     </tr>
                     <tr>
-                        <td><img src="./Image/icon-check.png" alt=""></td>
-                        <td><img src="./Image/icon-check.png" alt=""></td>
-                        <td><img src="./Image/icon-check.png" alt=""></td>
-                        <td><img src="./Image/icon-check.png" alt=""></td>
+                        <td><img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/icon-check.png" alt=""></td>
+                        <td><img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/icon-check.png" alt=""></td>
+                        <td><img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/icon-check.png" alt=""></td>
+                        <td><img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/icon-check.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/icon-x.png" alt=""></td>
+                        <td><img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/icon-check.png" alt=""></td>
+                        <td><img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/icon-check.png" alt=""></td>
+                        <td><img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/icon-check.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/icon-x.png" alt=""></td>
+                        <td><img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/icon-x.png" alt=""></td>
+                        <td><img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/icon-check.png" alt=""></td>
+                        <td><img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/icon-check.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/icon-x.png" alt=""></td>
+                        <td><img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/icon-x.png" alt=""></td>
+                        <td><img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/icon-x.png" alt=""></td>
+                        <td><img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/icon-check.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/icon-x.png" alt=""></td>
+                        <td><img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/icon-x.png" alt=""></td>
+                        <td><img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/icon-x.png" alt=""></td>
+                        <td><img src="https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/icon-x.png" alt=""></td>
                     </tr>
                 </tbody>
             </table>

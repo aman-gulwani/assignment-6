@@ -16,8 +16,6 @@
     font-weight: bolder;
 }
 
-
-
 footer {
     width: 100%;
     background-color: #26272b;
@@ -208,6 +206,8 @@ hr {
         font-size: 50px;
         color: grey;
         margin-bottom: 15px;
+        font-weight: bolder;
+
     }
     
     footer {
@@ -403,6 +403,8 @@ hr {
         font-size: 50px;
         color: grey;
         margin-bottom: 15px;
+        font-weight: bolder;
+
     }
     
     footer {

@@ -12,10 +12,11 @@
     justify-content: center;
     align-items: center;
     font-size: 50px;
-    color: grey;
     margin-bottom: 15px;
-    color: rgb(36, 36, 233);
+    font-weight: bolder;
 }
+
+
 
 footer {
     width: 100%;

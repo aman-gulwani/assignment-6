@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <title>Live Clock with Dynamic Greeting</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            display: flex;
+            justify-content: center;align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            text-align: center;
+        }
+
+        #time {
+            font-size: 8rem;
+
+        }
+
+        h1 {
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+            font-size: 3rem;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <time id="time"></time>
+    <h1 id="greeting">Good Afternoon</h1>
+    <h2 id="name">Aman Gulwani</h2>
+    <h3 id="date"></h3>
+    <script src="Practical-17.js"></script>
+</body>
+</html>

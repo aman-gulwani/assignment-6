@@ -3,6 +3,10 @@ const greeting = document.getElementById("greeting");
 const name  = document.getElementById("name");
 const date = document.getElementById("date");
 
+name.addEventListener("keypress", setName);
+name.addEventListener("blur", setName);
+
+
 function showtime() {
 
     let today = new Date();
@@ -12,7 +16,7 @@ function showtime() {
     let todaydate = today.toDateString();
 
 
-    const ampm = hour>12 ? "PM" : "AM";
+    const ampm = hour>=12 ? "PM" : "AM";
 
     hour = hour % 12 || 12;
 
@@ -28,7 +32,7 @@ function addZero(n) {
 }
 
 function setGreeting() {
-    let today = new Date(2020, 12, 10, 22, 8, 8);
+    let today = new Date();
     let hours = today.getHours();
 
     if (hours >= 0 && hours < 5) {
@@ -42,17 +46,17 @@ function setGreeting() {
         greeting.innerHTML = "Good Morning";
     }
 
-    else if (hours > 7 && hours < 13) {
+    else if (hours > 7 && hours < 12) {
         document.body.style.backgroundImage = "url('https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/morning1.webp')";
         greeting.innerHTML = "Good Morning";
     }
 
-    else if (hours > 12 && hours < 17) {
+    else if (hours > 11 && hours < 17) {
         document.body.style.backgroundImage = "url('https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/afternoon1.jpg')";
         greeting.innerHTML = "Good Afternoon";
     }
 
-    else if (hours > 16 && hours < 20) {
+    else if (hours > 16 && hours < 19) {
         document.body.style.backgroundImage = "url('https://raw.githubusercontent.com/aman-gulwani/assignment-6/master/Image/evening.webp')";
         greeting.innerHTML = "Good Evening";
     }
@@ -64,5 +68,28 @@ function setGreeting() {
     }
 }
 
+function getName() {
+    if (localStorage.getItem("myData") === null) {
+        name.innerHTML = "[Enter Name]";
+    }
+    else {
+        name.innerHTML = localStorage.getItem("myData");
+    }
+}
+
+function setName(e) {
+    if (e.type === "keypress") {
+        if (e.keyCode == 13) {
+            localStorage.setItem('myData', e.target.innerHTML);
+            name.blur();
+        }
+    }
+    else {
+        localStorage.setItem('myData', e.target.innerHTML);
+    }
+}
+
+
+getName();
 showtime();
 setGreeting();

@@ -70,7 +70,7 @@ function setGreeting() {
 
 function getName() {
     if (localStorage.getItem("myData") === null) {
-        name.innerHTML = "[Enter Name]";
+        name.innerHTML = "Hey!";
     }
     else {
         name.innerHTML = localStorage.getItem("myData");
